@@ -149,9 +149,9 @@ Candidato a vereador pela primeira vez, estarei focado na elaboração e votaç�
           });
         });
 
+// Definindo os compromissos diretamente no código
 const date = new Date();
 
-// Definindo os compromissos diretamente no código
 const compromissos = {
     "2024-08-26": ["Participação no dia de Lutas dos bancários - 9h", "Entrevista Jornal da Mira - 12h", "Gravação de programas para as redes sociais - 16h"],
 	"2024-08-27": ["Panfletagem na Deodoro/Canto da Viração - 8h", "Entrevista no programa Conexão Nós, na Rádio FM Esperança - 13h", "Roda de conversa com moradores da Fé em Deus - 19h"],
