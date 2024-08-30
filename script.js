@@ -162,7 +162,10 @@ const compromissos = {
   "2024-08-29": ["Entrevista Saulo Arcangeli na Mais FM - 7h", "Panfletagem no Liceu Maranhense(cobertura Mirante) - 13h"],
   "2024-08-30": ["Terminal da Integração – Dia D do passe livre estudantil - 7h", "Roda de conversa com as mulheres da Vila Dom Luís(a confirmar) - 16h"],
   "2024-08-31": ["Ato contra o feminicídio na Deodoro(cobertura Mirante) - 8h", "Adesivaço na sede - 16h"],
-  "2024-09-01": ["Feira do Bairro de Fátima - 7h30", "Adesivaço na sede - 16h"],
+  "2024-09-01": ["Feira do Bairro de Fátima - 7h30", "Adesivaço na sede - 16h"],
+  "2024-09-02": ["Entrevista Saulo Arcangeli no programa Abrindo o Verbo (Mirante News) - 14h30", "Sabatina Saulo Arcangeli no programa Ponto Continuando (92,3 FM) - 19h"],
+  "2024-09-03": ["Entrevista Pauta Alternativa (Tv Alternativa) - 8h30", "Reunião com o Fórum de Trabalhadores e Trabalhadoras da Assistência Social , no Sind. de Assistentes Sociais (casa do trabalhador) cobertura Mirante - 15h", "Entrevista Saulo Arcangeli UQ Podcast - 19h30"],
+  "2024-09-04": ["Entrevista Saulo Arcangeli na Educadora - 8h", "Gravação de vídeo para redes sociais - 16h"],
     // Adicione mais compromissos conforme necessário
 };
 
