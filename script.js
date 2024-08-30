@@ -110,8 +110,11 @@ document.addEventListener('DOMContentLoaded', function () {
 </p>`,
 
 'jayroMesquita': `<p class="montserrat-font" style="line-height: 1.3; font-size: 1.2rem;">
-Sou Jayro Mesquita, trabalhador portuário e engenheiro civil, tenho 51 anos e milito no PSTU, com ações principalmente - mas não só - na área dos portos.
-Candidato a vereador pela primeira vez, estarei focado na elaboração e votação de projetos que garantam pontos cruciais da minha luta e das pautas do PSTU, entre os quais:<br> 
+Filho de uma família de treze filhos que passava muitas dificuldades em município do continente do estado do Maranhão e que resolveu vir para São Luís em busca de melhores dias para sua prole, Jayro Mesquita é recém-formado em Engenharia Civil e seu TCC foi trabalhado a partir de uma situação de palafita existente em seu bairro, o Santa Cruz, ali Jayro projetou o recolhimento dos esgoto dessa comunidade de palafitas com vistas a diminuir o impacto ambiental e também contribuir para uma melhor qualidade de vida daqueles comunitários, principalmente para as crianças que ali vivem.<br>
+
+<br>Jayro Mesquita é trabalhador portuário avulso no Porto do Itaqui. Recentemente participou de um movimento de greve exatamente em defesa da manutenção do posto de trabalho de dezenas de operários, que vivem frequentemente recebendo ataques e ameaças da classe empresarial. Durante o movimento grevista os trabalhadores se impuseram e foram para a frente do porto, para mostrar aos empresários que os trabalhadores estão atentos e não permitirão que sejam retirados nossos direitos de trabalho dentro da área portuária.<br>
+
+<br>Candidato a vereador pela primeira vez, estarei focado na elaboração e votação de projetos que garantam pontos cruciais da minha luta e das pautas do PSTU, entre os quais:<br> 
 
 <br>-	Implantação do passe livre para estudantes e desempregados;<br>
 <br>-	Implantação de uma política de casas populares para moradores de área de risco e palafitas;<br>
@@ -156,6 +159,10 @@ const compromissos = {
     "2024-08-26": ["Participação no dia de Lutas dos bancários - 9h", "Entrevista Jornal da Mira - 12h", "Gravação de programas para as redes sociais - 16h"],
 	"2024-08-27": ["Panfletagem na Deodoro/Canto da Viração - 8h", "Entrevista no programa Conexão Nós, na Rádio FM Esperança - 13h", "Roda de conversa com moradores da Fé em Deus - 19h"],
   "2024-08-28": ["Gravação de programa para as redes sociais - 8h", "Reunião com o Sindicato dos Urbanitários sobre saneamento em São Luís - 14h30", "Reunião da Coordenação da campanha - 19h"],
+  "2024-08-29": ["Entrevista Saulo Arcangeli na Mais FM - 7h", "Panfletagem no Liceu Maranhense(cobertura Mirante) - 13h"],
+  "2024-08-30": ["Terminal da Integração – Dia D do passe livre estudantil - 7h", "Roda de conversa com as mulheres da Vila Dom Luís(a confirmar) - 16h"],
+  "2024-08-31": ["Ato contra o feminicídio na Deodoro(cobertura Mirante) - 8h", "Adesivaço na sede - 16h"],
+  "2024-09-01": ["Feira do Bairro de Fátima - 7h30", "Adesivaço na sede - 16h"],
     // Adicione mais compromissos conforme necessário
 };
 
