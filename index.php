@@ -8,14 +8,17 @@
 
   <!-- MENU -->
   <header id="cabecalho">
-    <div class="logo"><a href="./"><img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/Logo PSTU/logo-pstu.png" alt=""></a></div>
+    <div class="logo">
+      <a href="./">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/Logo PSTU/logo-pstu.png" alt="Logo PSTU São Luís">
+      </a>
+    </div>
     <nav>
       <ul id="nav-list" class="montserrat-font">
-        <li><a href="#pre-candidaturas">CANDIDATOS</a></li>
-        <li><a href="#rolagemProp">PROPOSTAS</a></li>
-        <li><a href="#agenda">AGENDA</a></li>
+        <li><a href="#pre-candidaturas">Candidatos</a></li>
+        <li><a href="#rolagemProp">Propostas</a></li>
+        <li><a href="#agenda">Agenda</a></li>
       </ul>
-
     </nav>
     <div class="mobile-menu">
       <div class="line1"></div>
@@ -26,67 +29,71 @@
 
   <!-- INTRODUÇÃO -->
   <section id="intro">
-    <img class="responsiveImg" src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/candidatos.png" alt="Foto com Saulo Arcangeli, Jaciara Castro, Coletivo das Pretas e Jayro Mesquita">
-    </div>
+    <img class="responsiveImg" src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/candidatos.png" alt="Candidatos do PSTU São Luís: Saulo Arcangeli, Jaciara Castro, Coletivo das Pretas e Jayro Mesquita">
   </section>
+
   <div class="zap">
-    <a href="https://wa.me/5598991951616" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/botaoZap.png" alt=""></a>
+    <a href="https://wa.me/5598991951616" target="_blank">
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/botaoZap.png" alt="Contato via WhatsApp">
+    </a>
   </div>
 
   <!-- CONTRIBUIÇÃO FINANCEIRA -->
   <section id="contribuicao">
     <div class="contribuicao montserrat-font">
-      <h2>CONTRIBUIÇÃO FINANCEIRA</h2>
-      <p>Copie o Pix ou Scaneie o QR Code</p>
+      <h2>Contribuição Financeira</h2>
+      <p>Copie o Pix ou escaneie o QR Code para apoiar o PSTU São Luís.</p>
     </div>
     <div class="QRCode">
       <div class="divCopiar">
-      <a href="#" id="copyLink"><img class="copiar" src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/btnCopiar.png" alt=""></a>
-      <p class="montserrat-font">Pix: <b>56.256.408/0001-83</b></p>
+        <a href="#" id="copyLink">
+          <img class="copiar" src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/btnCopiar.png" alt="Copiar código Pix">
+        </a>
+        <p class="montserrat-font">Pix: <b>56.256.408/0001-83</b></p>
       </div>
-      <img class="QR" src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/qrCodeContribuicao.png" alt="">
+      <img class="QR" src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/qrCodeContribuicao.png" alt="QR Code para contribuição financeira">
     </div>
   </section>
 
   <!-- QUEM SOMOS -->
   <section id="pre-candidaturas">
-    <h2 class="montserrat-font">QUEM SOMOS</h2>
+    <h2 class="montserrat-font">Quem Somos</h2>
 
     <ul class="candidatos-pref container-1200">
 
       <li class="card-candidato" data-candidato="sauloArcangeli">
         <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/saulo.png" alt="Saulo Arcangeli">
-          <span class="montserrat-font"><strong>Saulo</strong><br><b>Arcangeli</b></span>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/saulo.png" alt="Saulo Arcangeli - Candidato a prefeito de São Luís">
+          <h3 class="montserrat-font"><strong>Saulo</strong><br><b>Arcangeli</b></h3>
           <div class="linha-vermelha"></div>
-          <p class="montserrat-font">Candidato a<br>prefeito de São Luís</p>
+          <p class="montserrat-font">Candidato a prefeito de São Luís</p>
         </a>
       </li>
 
       <li class="card-candidato" data-candidato="jaciaraCastro">
         <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/jaciara.png" alt="Jaciara Castro">
-          <span class="montserrat-font"><strong>Jaciara</strong><br><b>Castro</b></span>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/jaciara.png" alt="Jaciara Castro - Candidata a vice-prefeita de São Luís">
+          <h3 class="montserrat-font"><strong>Jaciara</strong><br><b>Castro</b></h3>
           <div class="linha-vermelha"></div>
-          <p class="montserrat-font">Candidata a<br>vice-prefeita de São Luís</p>
+          <p class="montserrat-font">Candidata a vice-prefeita de São Luís</p>
         </a>
       </li>
 
       <li class="card-candidato" data-candidato="coletivoDasPretas">
         <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/coletivoPretas.png" alt="Coletivo das Pretas">
-          <span class="montserrat-font"><strong>Coletivo<br>das Pretas</strong></span></span>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/coletivoPretas.png" alt="Coletivo das Pretas - Candidatas a vereadoras de São Luís">
+          <h3 class="montserrat-font"><strong>Coletivo<br>das Pretas</strong></h3>
           <div class="linha-vermelha"></div>
-          <p class="montserrat-font">Candidatas a<br>vereadoras de São Luís</p>
+          <p class="montserrat-font">Candidatas a vereadoras de São Luís</p>
         </a>
       </li>
 
       <li class="card-candidato" data-candidato="jayroMesquita">
         <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/jayro.png" alt="Jayro Mesquita">
-          <span class="montserrat-font"><strong>Jayro</strong><br><b>Mesquita</b></span></span>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/jayro.png" alt="Jayro Mesquita - Candidato a vereador de São Luís">
+          <h3 class="montserrat-font"><strong>Jayro</strong><br><b>Mesquita</b></h3>
           <div class="linha-vermelha"></div>
-          <p class="montserrat-font" id="rolagemProp">Candidato a<br>vereador de São Luís</p>
+          <p class="montserrat-font" id="rolagemProp">Candidato a vereador de São Luís</p>
         </a>
       </li>
 
@@ -96,18 +103,21 @@
 
   <div class="bg-faca-parte">
     <section id="faca-parte">
-
       <div class="vamos-trilhar">
         <div class="clique-aqui">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/cartilhas.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/cartilhas.png" alt="Cartilhas do PSTU São Luís">
         </div>
         <h2 class="montserrat-font">
           Acesse Nossas<br>
           Propostas
         </h2>
         <div class="btnCartilha">
-          <a href="<?php echo get_stylesheet_directory_uri(); ?>/arquivosDeReferencia/programapstuSaulo&Jaciara2024.pdf" download="programapstuSaulo&Jaciara2024.pdf"><img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/btnBaixar.png" alt=""></a>
-          <a href="<?php echo get_stylesheet_directory_uri(); ?>/arquivosDeReferencia/programapstuSaulo&Jaciara2024.pdf" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/btnLer.png" alt=""></a>
+          <a href="<?php echo get_stylesheet_directory_uri(); ?>/arquivosDeReferencia/programapstuSaulo&Jaciara2024.pdf" download="programapstuSaulo&Jaciara2024.pdf">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/btnBaixar.png" alt="Baixar proposta PSTU São Luís">
+          </a>
+          <a href="<?php echo get_stylesheet_directory_uri(); ?>/arquivosDeReferencia/programapstuSaulo&Jaciara2024.pdf" target="_blank">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/btnLer.png" alt="Ler proposta PSTU São Luís">
+          </a>
         </div>
       </div>
     </section>

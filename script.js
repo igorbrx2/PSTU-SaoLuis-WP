@@ -1,5 +1,133 @@
 console.log("Script carregado corretamente");
 
+// Definindo os compromissos diretamente no código
+const date = new Date();
+
+const compromissos = {
+    "2024-08-26": ["Participação no dia de Lutas dos bancários - 9h", "Entrevista Jornal da Mira - 12h", "Gravação de programas para as redes sociais - 16h"],
+	"2024-08-27": ["Panfletagem na Deodoro/Canto da Viração - 8h", "Entrevista no programa Conexão Nós, na Rádio FM Esperança - 13h", "Roda de conversa com moradores da Fé em Deus - 19h"],
+  "2024-08-28": ["Gravação de programa para as redes sociais - 8h", "Reunião com o Sindicato dos Urbanitários sobre saneamento em São Luís - 14h30", "Reunião da Coordenação da campanha - 19h"],
+  "2024-08-29": ["Entrevista Saulo Arcangeli na Mais FM - 7h", "Panfletagem no Liceu Maranhense(cobertura Mirante) - 13h"],
+  "2024-08-30": ["Terminal da Integração – Dia D do passe livre estudantil - 7h", "Roda de conversa com as mulheres da Vila Dom Luís(a confirmar) - 16h"],
+  "2024-08-31": ["Ato contra o feminicídio na Deodoro(cobertura Mirante) - 8h", "Adesivaço na sede - 16h"],
+  "2024-09-01": ["Feira do Bairro de Fátima - 7h30", "Adesivaço na sede - 16h"],
+  "2024-09-02": ["Entrevista Saulo Arcangeli no programa Abrindo o Verbo (Mirante News) - 14h30", "Sabatina Saulo Arcangeli no programa Ponto Continuando (92,3 FM) - 19h"],
+  "2024-09-03": ["Entrevista Pauta Alternativa (Tv Alternativa) - 8h30", "Reunião com o Fórum de Trabalhadores e Trabalhadoras da Assistência Social , no Sind. de Assistentes Sociais (casa do trabalhador) cobertura Mirante - 15h", "Entrevista Saulo Arcangeli UQ Podcast - 19h30"],
+  "2024-09-04": ["Entrevista Saulo Arcangeli na Educadora - 8h", "Gravação de vídeo para redes sociais - 16h"],
+	"2024-09-06": ["Entrevista Rádio Universidade - 9h", "Entrevista JTVUFMA - 12h30", "Reunião sorteio sabatina do Programa Direto a Pauta da Rádio  92.3 FM - 16h"],
+	"2024-09-07": ["Brechó de Lutas - 8h", "Programa Café com Leane Lago - 9h30", "Roda de conversa na comunidade tradicional Rio dos Cachorros (zona rural) - 16h"],
+	"2024-09-08": ["Panfletagem Feira do Anjo da Guarda - 8h"],
+	"2024-09-12": ["Bom dia Mirante - 7h30", "Panfletagem RU da UFMA - 11h30", "Sabatina no programa Tá na Hora (Difusora) - 19h"],
+	"2024-09-13": ["Panfletagem na CAEMA Centro - 7h30", "Gravação de programa para redes sociais- 8h30", "Sabatina Direto a Pauta (FM 92.3) - 18h"],
+	"2024-09-14": ["Caminhada no Quilombo Liberdade - 7h30"],
+	"2024-09-15": ["Panfletagem na feira do João Paulo  - 8h"],
+	"2024-09-16": ["Gravação de programas para redes sociais - 9h", "Panfletagem no IFMA Monte Castelo - 13h30", "Encontro com Associação de Surdos do Maranhão - 16h"],
+	"2024-09-17": ["Panfletagem na empresa de transporte 1001 - 4h", "Panfletagem na UEMA - 11h30", "Ato pelo SIM ao Passe Livre Estudantil (Praça Deodoro) - 16h", "Plenária de Campanha - 19h"],
+	"2024-09-18": ["Panfletagem na Vale - 6h", "Sabatina Band - 18h50"],
+    // Adicione mais compromissos conforme necessário
+};
+
+const findNearestDayWithAppointments = (selectedDate) => {
+    let nearestDay = null;
+    let nearestDayDiff = Infinity;
+    const todayTime = selectedDate.getTime();
+
+    for (let day in compromissos) {
+        const dayDate = new Date(day);
+        const diff = dayDate.getTime() - todayTime;
+
+        if (diff >= 0 && diff < nearestDayDiff && compromissos[day].length > 0) {
+            nearestDay = dayDate;
+            nearestDayDiff = diff;
+        }
+    }
+
+    return nearestDay;
+};
+
+const renderCalendar = () => {
+    date.setDate(1);
+    const monthDays = document.querySelector('.days');
+    const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+    const prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
+    const firstDayIndex = date.getDay();
+    const lastDayIndex = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
+    const nextDays = 7 - lastDayIndex - 1;
+
+    const months = [
+        "Janeiro", "Fevereiro", "Março", "Abril",
+        "Maio", "Junho", "Julho", "Agosto",
+        "Setembro", "Outubro", "Novembro", "Dezembro"
+    ];
+
+    document.querySelector('.date p').innerHTML = `${months[date.getMonth()]} ${date.getFullYear()}`;
+
+    let days = "";
+
+    for (let x = firstDayIndex; x > 0; x--) {
+        days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
+    }
+
+    for (let i = 1; i <= lastDay; i++) {
+        const currentDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
+        if (i === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
+            days += `<div class="today">${i}</div>`;
+        } else if (compromissos[currentDate]) {
+            days += `<div class="appointment">${i}</div>`;
+        } else {
+            days += `<div>${i}</div>`;
+        }
+    }
+
+    for (let j = 1; j <= nextDays; j++) {
+        days += `<div class="next-date">${j}</div>`;
+    }
+    monthDays.innerHTML = days;
+
+    updateEvents(new Date());
+};
+
+const updateEvents = (selectedDate) => {
+    const formattedDate = `${selectedDate.getFullYear()}-${String(selectedDate.getMonth() + 1).padStart(2, '0')}-${String(selectedDate.getDate()).padStart(2, '0')}`;
+    let events = compromissos[formattedDate] || [];
+    const eventsDiv = document.querySelector('.events');
+
+    if (events.length === 0) {
+        const nearestDay = findNearestDayWithAppointments(selectedDate);
+        if (nearestDay) {
+            const nearestDate = `${nearestDay.getFullYear()}-${String(nearestDay.getMonth() + 1).padStart(2, '0')}-${String(nearestDay.getDate()).padStart(2, '0')}`;
+            events = compromissos[nearestDate] || [];
+            eventsDiv.innerHTML = `<h3 style="text-align: center; font-size: 1.2rem; margin: 10px auto;">Compromissos para ${nearestDay.getDate()}</h3>` + events.map(event => `<div>${event}</div>`).join('');
+        } else {
+            eventsDiv.innerHTML = "<h3 style='text-align: center; font-size: 1.2rem; margin: 10px auto;'>Sem compromissos</h3>";
+        }
+    } else {
+        eventsDiv.innerHTML = `<h3 style="text-align: center; font-size: 1.2rem; margin: 10px auto;">Compromissos para ${selectedDate.getDate()}</h3>` + events.map(event => `<div>${event}</div>`).join('');
+    }
+};
+
+document.querySelectorAll('.days').forEach(day => {
+    day.addEventListener('click', (e) => {
+        if (e.target.classList.contains('prev-date') || e.target.classList.contains('next-date')) return;
+        const selectedDay = parseInt(e.target.innerHTML);
+        const selectedDate = new Date(date.getFullYear(), date.getMonth(), selectedDay);
+        updateEvents(selectedDate);
+    });
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    date.setMonth(date.getMonth() - 1);
+    renderCalendar();
+});
+
+document.querySelector('.next').addEventListener('click', () => {
+    date.setMonth(date.getMonth() + 1);
+    renderCalendar();
+});
+
+renderCalendar();
+
+
 // COPIAR PIX
 document.getElementById('copyLink').addEventListener('click', function(event) {
   event.preventDefault(); 
@@ -152,116 +280,6 @@ Filho de uma família de treze filhos que passava muitas dificuldades em municí
           });
         });
 
-// Definindo os compromissos diretamente no código
-const date = new Date();
-
-const compromissos = {
-    "2024-08-26": ["Participação no dia de Lutas dos bancários - 9h", "Entrevista Jornal da Mira - 12h", "Gravação de programas para as redes sociais - 16h"],
-	"2024-08-27": ["Panfletagem na Deodoro/Canto da Viração - 8h", "Entrevista no programa Conexão Nós, na Rádio FM Esperança - 13h", "Roda de conversa com moradores da Fé em Deus - 19h"],
-  "2024-08-28": ["Gravação de programa para as redes sociais - 8h", "Reunião com o Sindicato dos Urbanitários sobre saneamento em São Luís - 14h30", "Reunião da Coordenação da campanha - 19h"],
-    // Adicione mais compromissos conforme necessário
-};
-
-const findNearestDayWithAppointments = (selectedDate) => {
-    let nearestDay = null;
-    let nearestDayDiff = Infinity;
-    const todayTime = selectedDate.getTime();
-
-    for (let day in compromissos) {
-        const dayDate = new Date(day);
-        const diff = dayDate.getTime() - todayTime;
-
-        if (diff >= 0 && diff < nearestDayDiff && compromissos[day].length > 0) {
-            nearestDay = dayDate;
-            nearestDayDiff = diff;
-        }
-    }
-
-    return nearestDay;
-};
-
-const renderCalendar = () => {
-    date.setDate(1);
-    const monthDays = document.querySelector('.days');
-    const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
-    const prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
-    const firstDayIndex = date.getDay();
-    const lastDayIndex = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
-    const nextDays = 7 - lastDayIndex - 1;
-
-    const months = [
-        "Janeiro", "Fevereiro", "Março", "Abril",
-        "Maio", "Junho", "Julho", "Agosto",
-        "Setembro", "Outubro", "Novembro", "Dezembro"
-    ];
-
-    document.querySelector('.date p').innerHTML = `${months[date.getMonth()]} ${date.getFullYear()}`;
-
-    let days = "";
-
-    for (let x = firstDayIndex; x > 0; x--) {
-        days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
-    }
-
-    for (let i = 1; i <= lastDay; i++) {
-        const currentDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
-        if (i === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
-            days += `<div class="today">${i}</div>`;
-        } else if (compromissos[currentDate]) {
-            days += `<div class="appointment">${i}</div>`;
-        } else {
-            days += `<div>${i}</div>`;
-        }
-    }
-
-    for (let j = 1; j <= nextDays; j++) {
-        days += `<div class="next-date">${j}</div>`;
-    }
-    monthDays.innerHTML = days;
-
-    updateEvents(new Date());
-};
-
-const updateEvents = (selectedDate) => {
-    const formattedDate = `${selectedDate.getFullYear()}-${String(selectedDate.getMonth() + 1).padStart(2, '0')}-${String(selectedDate.getDate()).padStart(2, '0')}`;
-    let events = compromissos[formattedDate] || [];
-    const eventsDiv = document.querySelector('.events');
-
-    if (events.length === 0) {
-        const nearestDay = findNearestDayWithAppointments(selectedDate);
-        if (nearestDay) {
-            const nearestDate = `${nearestDay.getFullYear()}-${String(nearestDay.getMonth() + 1).padStart(2, '0')}-${String(nearestDay.getDate()).padStart(2, '0')}`;
-            events = compromissos[nearestDate] || [];
-            eventsDiv.innerHTML = `<h3 style="text-align: center; font-size: 1.2rem; margin: 10px auto;">Compromissos para ${nearestDay.getDate()}</h3>` + events.map(event => `<div>${event}</div>`).join('');
-        } else {
-            eventsDiv.innerHTML = "<h3 style='text-align: center; font-size: 1.2rem; margin: 10px auto;'>Sem compromissos</h3>";
-        }
-    } else {
-        eventsDiv.innerHTML = `<h3 style="text-align: center; font-size: 1.2rem; margin: 10px auto;">Compromissos para ${selectedDate.getDate()}</h3>` + events.map(event => `<div>${event}</div>`).join('');
-    }
-};
-
-document.querySelectorAll('.days').forEach(day => {
-    day.addEventListener('click', (e) => {
-        if (e.target.classList.contains('prev-date') || e.target.classList.contains('next-date')) return;
-        const selectedDay = parseInt(e.target.innerHTML);
-        const selectedDate = new Date(date.getFullYear(), date.getMonth(), selectedDay);
-        updateEvents(selectedDate);
-    });
-});
-
-document.querySelector('.prev').addEventListener('click', () => {
-    date.setMonth(date.getMonth() - 1);
-    renderCalendar();
-});
-
-document.querySelector('.next').addEventListener('click', () => {
-    date.setMonth(date.getMonth() + 1);
-    renderCalendar();
-});
-
-renderCalendar();
-
 // MENU RESPONSIVO
 
 class MobileNavbar {
@@ -319,5 +337,6 @@ document.querySelector('a[href="#pre-candidaturas"]').addEventListener('click', 
         behavior: 'smooth'
     });  
  });
+
 
 
