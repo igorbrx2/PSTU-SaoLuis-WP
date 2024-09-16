@@ -26,7 +26,7 @@
 
   <!-- INTRODUÇÃO -->
   <section id="intro">
-    <img class="responsiveImg" src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/candidatos.png" alt="">
+    <img class="responsiveImg" src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/candidatos.png" alt="Foto com Saulo Arcangeli, Jaciara Castro, Coletivo das Pretas e Jayro Mesquita">
     </div>
   </section>
   <div class="zap">
@@ -56,7 +56,7 @@
 
       <li class="card-candidato" data-candidato="sauloArcangeli">
         <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/saulo.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/saulo.png" alt="Saulo Arcangeli">
           <span class="montserrat-font"><strong>Saulo</strong><br><b>Arcangeli</b></span>
           <div class="linha-vermelha"></div>
           <p class="montserrat-font">Candidato a<br>prefeito de São Luís</p>
@@ -65,7 +65,7 @@
 
       <li class="card-candidato" data-candidato="jaciaraCastro">
         <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/jaciara.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/jaciara.png" alt="Jaciara Castro">
           <span class="montserrat-font"><strong>Jaciara</strong><br><b>Castro</b></span>
           <div class="linha-vermelha"></div>
           <p class="montserrat-font">Candidata a<br>vice-prefeita de São Luís</p>
@@ -74,7 +74,7 @@
 
       <li class="card-candidato" data-candidato="coletivoDasPretas">
         <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/coletivoPretas.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/coletivoPretas.png" alt="Coletivo das Pretas">
           <span class="montserrat-font"><strong>Coletivo<br>das Pretas</strong></span></span>
           <div class="linha-vermelha"></div>
           <p class="montserrat-font">Candidatas a<br>vereadoras de São Luís</p>
@@ -83,7 +83,7 @@
 
       <li class="card-candidato" data-candidato="jayroMesquita">
         <a href="./">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/jayro.png" alt="">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/fotosCandidatos2024/jayro.png" alt="Jayro Mesquita">
           <span class="montserrat-font"><strong>Jayro</strong><br><b>Mesquita</b></span></span>
           <div class="linha-vermelha"></div>
           <p class="montserrat-font" id="rolagemProp">Candidato a<br>vereador de São Luís</p>
@@ -151,7 +151,7 @@
       </div>
       <div class="agenda">
         <div class="prox-eventos"><span class="montserrat-font">PRÓXIMOS EVENTOS</span></div>
-        <div class="events"></div>
+        <div class="events montserrat-font"></div>
       </div>
     </div>
 
