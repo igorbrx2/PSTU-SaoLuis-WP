@@ -159,23 +159,6 @@ const compromissos = {
     "2024-08-26": ["Participação no dia de Lutas dos bancários - 9h", "Entrevista Jornal da Mira - 12h", "Gravação de programas para as redes sociais - 16h"],
 	"2024-08-27": ["Panfletagem na Deodoro/Canto da Viração - 8h", "Entrevista no programa Conexão Nós, na Rádio FM Esperança - 13h", "Roda de conversa com moradores da Fé em Deus - 19h"],
   "2024-08-28": ["Gravação de programa para as redes sociais - 8h", "Reunião com o Sindicato dos Urbanitários sobre saneamento em São Luís - 14h30", "Reunião da Coordenação da campanha - 19h"],
-  "2024-08-29": ["Entrevista Saulo Arcangeli na Mais FM - 7h", "Panfletagem no Liceu Maranhense(cobertura Mirante) - 13h"],
-  "2024-08-30": ["Terminal da Integração – Dia D do passe livre estudantil - 7h", "Roda de conversa com as mulheres da Vila Dom Luís(a confirmar) - 16h"],
-  "2024-08-31": ["Ato contra o feminicídio na Deodoro(cobertura Mirante) - 8h", "Adesivaço na sede - 16h"],
-  "2024-09-01": ["Feira do Bairro de Fátima - 7h30", "Adesivaço na sede - 16h"],
-  "2024-09-02": ["Entrevista Saulo Arcangeli no programa Abrindo o Verbo (Mirante News) - 14h30", "Sabatina Saulo Arcangeli no programa Ponto Continuando (92,3 FM) - 19h"],
-  "2024-09-03": ["Entrevista Pauta Alternativa (Tv Alternativa) - 8h30", "Reunião com o Fórum de Trabalhadores e Trabalhadoras da Assistência Social , no Sind. de Assistentes Sociais (casa do trabalhador) cobertura Mirante - 15h", "Entrevista Saulo Arcangeli UQ Podcast - 19h30"],
-  "2024-09-04": ["Entrevista Saulo Arcangeli na Educadora - 8h", "Gravação de vídeo para redes sociais - 16h"],
-	"2024-09-06": ["Entrevista Rádio Universidade - 9h", "Entrevista JTVUFMA - 12h30", "Reunião sorteio sabatina do Programa Direto a Pauta da Rádio  92.3 FM - 16h"],
-	"2024-09-07": ["Brechó de Lutas - 8h", "Programa Café com Leane Lago - 9h30", "Roda de conversa na comunidade tradicional Rio dos Cachorros (zona rural) - 16h"],
-	"2024-09-08": ["Panfletagem Feira do Anjo da Guarda - 8h"],
-	"2024-09-12": ["Bom dia Mirante - 7h30", "Panfletagem RU da UFMA - 11h30", "Sabatina no programa Tá na Hora (Difusora) - 19h"],
-	"2024-09-13": ["Panfletagem na CAEMA Centro - 7h30", "Gravação de programa para redes sociais- 8h30", "Sabatina Direto a Pauta (FM 92.3) - 18h"],
-	"2024-09-14": ["Caminhada no Quilombo Liberdade - 7h30"],
-	"2024-09-15": ["Panfletagem na feira do João Paulo  - 8h"],
-	"2024-09-16": ["Gravação de programas para redes sociais - 9h", "Panfletagem no IFMA Monte Castelo - 13h30", "Encontro com Associação de Surdos do Maranhão - 16h"],
-	"2024-09-17": ["Panfletagem na empresa de transporte 1001 - 4h", "Panfletagem na UEMA - 11h30", "Ato pelo SIM ao Passe Livre Estudantil (Praça Deodoro) - 16h", "Plenária de Campanha - 19h"],
-	"2024-09-18": ["Panfletagem na Vale - 6h", "Sabatina Band - 18h50"],
     // Adicione mais compromissos conforme necessário
 };
 
