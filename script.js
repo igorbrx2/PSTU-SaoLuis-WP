@@ -24,6 +24,14 @@ const compromissos = {
 	"2024-09-16": ["Gravação de programas para redes sociais - 9h", "Panfletagem no IFMA Monte Castelo - 13h30", "Encontro com Associação de Surdos do Maranhão - 16h"],
 	"2024-09-17": ["Panfletagem na empresa de transporte 1001 - 4h", "Panfletagem na UEMA - 11h30", "Ato pelo SIM ao Passe Livre Estudantil (Praça Deodoro) - 16h", "Plenária de Campanha - 19h"],
 	"2024-09-18": ["Panfletagem na Vale - 6h", "Sabatina Band - 18h50"],
+  "2024-09-19": ["Entrega do documento da UNICEF com “Análises e sugestões com relação à direitos de crianças e adolescentes”, na sede do partido - 9h", "Debate Imirante - 20h", "Debate Imirante - 20h"],
+  "2024-09-20": ["Panfletagem IEMA (Centro) - 6h45", "Debate TV Difusora - 17h30"],
+  "2024-09-21": ["Roda de conversa com o Fórum de Pessoas com Deficiência - 9h30", "Caminhada na comunidade tradicional do TAIM - 17h"],
+  "2024-09-22": ["Panfletagem Feira da Cidade Operária - 8h"],
+  "2024-09-23": ["Panfletagem na empresa de transporte 1001 - 4h", "Caminhada na comunidade tradicional do Cajueiro - 17h", "Live sobre a educação de São Luís - 20h"],
+  "2024-09-24": ["Panfletagem nos Correios do São Cristóvão - 7h30", "Debate sobre Passe Livre Estudantil na UNDB - 17h", "Plenária de campanha - 19h"],
+  "2024-09-25": ["Panfletagem no CEM São Cristóvão - 12h30", "Caminhada na comunidade tradicional Rio dos Cachorros - 18h"],
+  "2024-09-26": ["JM1 - 12h", "Caminhada na Rua Grande - 16h"],
     // Adicione mais compromissos conforme necessário
 };
 
